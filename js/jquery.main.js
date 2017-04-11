@@ -1,0 +1,1 @@
+$(function(){	$('.slider-sale').slick({		// slidesToScroll: 1,		// // dots: true,		// autoplay: true,		// autoplaySpeed: 2500		// prevArrow: '<button type="button" class="slick-prev">Previous</button>',		// nextArrow: '<button type="button" class="slick-next">Next</button>'	});		});
