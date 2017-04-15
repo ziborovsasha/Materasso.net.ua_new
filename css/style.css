@@ -234,6 +234,7 @@ body {
 
 .slick-slide img {
   display: block;
+	margin: 0 auto;
 }
 .slick-slide.slick-loading img {
   display: none;
@@ -332,7 +333,12 @@ body {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+<<<<<<< HEAD
   padding: 8px 22px;
+=======
+  /*height: 30px;*/
+  padding: 5px 10px;
+>>>>>>> origin/master
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -356,7 +362,11 @@ body {
   color: #fff;
 }
 .btn_lg, a.btn_lg {
+<<<<<<< HEAD
   padding: 11px 26px;
+=======
+  padding: 12px 8px;
+>>>>>>> origin/master
   font-size: 22px;
   background-color: #d0215c;
   border: 1px solid transparent;
@@ -365,7 +375,7 @@ body {
   border-radius: 4px;
 }
 .btn_lg:hover, a.btn_lg:hover {
-  border: 1px solid #fff;
+  border-color: #fff;
   background-color: transparent;
 }
 
@@ -499,10 +509,13 @@ label {
 .phone ul {
   margin-bottom: 15px;
 }
+<<<<<<< HEAD
 .phone ul i {
   margin-right: 10px;
   font-size: 20px;
 }
+=======
+>>>>>>> origin/master
 .phone ul a {
   font-size: 22px;
   line-height: 26px;
@@ -513,6 +526,10 @@ label {
   margin-left: 8px;
 }
 
+.nav{
+	position: relative;
+	z-index: 50;
+}
 .nav-list {
   margin: 0 -15px;
 }
@@ -612,12 +629,14 @@ label {
 }
 
 .block-news {
-  padding: 50px 0;
+  padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .news-list {
   position: relative;
   margin: 0 -15px;
+	position: relative;
 }
 
 .news {
@@ -632,6 +651,8 @@ label {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+	margin-right: 1px;
+	overflow: hidden;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -641,13 +662,26 @@ label {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
+.news__img a{display: block;}
 .news__img img {
+<<<<<<< HEAD
   display: block;
   width: 100%;
   height: 100%;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+=======
+  height: 100%;
+	margin: 0 auto;
+	display: block;
+  max-height: 100%;
+	max-width: 100%;
+}
+.news_text{
+	padding-bottom: 40px;
+	line-height: 18px;
+>>>>>>> origin/master
 }
 .news__text {
   padding-bottom: 40px;
@@ -661,6 +695,7 @@ label {
 .news__text h3 a:hover {
   text-decoration: underline;
 }
+<<<<<<< HEAD
 .news__text p {
   margin-bottom: 30px;
   line-height: 18px;
@@ -670,6 +705,15 @@ label {
   bottom: 0;
 }
 
+=======
+.news p {
+  margin-bottom:18px;
+}
+.news .btn{
+	position: absolute;
+	bottom: 0;
+}
+>>>>>>> origin/master
 /* section about */
 .about {
   padding: 50px 0;
@@ -678,7 +722,11 @@ label {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
+<<<<<<< HEAD
 .about .right {
+=======
+.about li:nth-child(even) img {
+>>>>>>> origin/master
   float: right;
   margin-right: 0;
   margin-left: 30px;
@@ -788,6 +836,7 @@ label {
 .slider-sale .slick-arrow, .certificate .slick-arrow {
   border: none;
   z-index: 1;
+<<<<<<< HEAD
   font-size: 20px;
   cursor: pointer;
 }
@@ -796,6 +845,19 @@ label {
 }
 .slider-sale .fa-chevron-left, .certificate .fa-chevron-left {
   left: 10px;
+=======
+	cursor: pointer;
+}
+.slider-sale .slick-prev, .certificate .slick-prev {
+  background: url(../img/sale_arrow-left.png) no-repeat;
+  width: 128px;
+  height: 128px;
+}
+.slider-sale .slick-next, .certificate .slick-next {
+  background: url(../img/sale_arrow-right.png) no-repeat;
+  width: 128px;
+  height: 128px;
+>>>>>>> origin/master
 }
 .slider-sale__item, .certificate__item {
   padding: 0 50px;
@@ -851,14 +913,20 @@ label {
 
 /* 6. FOOTER */
 /* ================================================ */
+<<<<<<< HEAD
 #footer {
+=======
+#footer{
+>>>>>>> origin/master
   background-color: #003d6c;
   line-height: 20px;
   color: #fff;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+	padding: 20px 0;
 }
+<<<<<<< HEAD
 #footer .wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -876,8 +944,19 @@ label {
   margin-right: -4px;
   width: 50%;
   font-style: normal;
-  text-align: right;
+=======
+#footer .item {
+  display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	margin-right: -4px;
 }
-
+#footer .address {
+>>>>>>> origin/master
+  text-align: right;
+	margin: 0;
+	font-style: normal;
+}
+#footer p{margin: 0;}
 /* 7. MEDIA */
 /* ================================================ */
