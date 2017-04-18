@@ -733,9 +733,15 @@ label {
 .product-card:hover .product-card__title {
   color: #d0215c;
 }
+.product-card:hover img.second {
+  opacity: 1;
+}
 .product-card__img {
+  position: relative;
   display: block;
   margin-bottom: 30px;
+  width: 350px;
+  height: 210px;
   overflow: hidden;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 10px;
@@ -743,9 +749,19 @@ label {
   border-radius: 10px;
 }
 .product-card__img img {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: block;
   width: 100%;
   margin: 0 auto;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.product-card__img img.second {
+  opacity: 0;
 }
 .product-card__title {
   color: #003d6c;
@@ -758,19 +774,19 @@ label {
 }
 
 /* section sale-certificate */
-.sale-certificate {
+.slider-block {
   padding: 50px 0;
   background-color: #f2f2f3;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
-.sale-certificate h4 {
+.slider-block h4 {
   text-transform: uppercase;
   color: #d0215c;
 }
 
-.slider-sale, .certificate {
+.slider-sale, .slider-questions-answers {
   margin-bottom: 50px;
   background-color: #fff;
   -webkit-border-radius: 9px;
@@ -780,30 +796,40 @@ label {
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
 }
-.slider-sale:hover, .certificate:hover {
+.slider-sale:hover, .slider-questions-answers:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
-.slider-sale .slick-arrow, .certificate .slick-arrow {
+.slider-sale .slick-arrow, .slider-questions-answers .slick-arrow {
   border: none;
   z-index: 1;
   font-size: 20px;
   cursor: pointer;
 }
-.slider-sale .fa-chevron-right, .certificate .fa-chevron-right {
+.slider-sale .fa-chevron-right, .slider-questions-answers .fa-chevron-right {
   right: 10px;
 }
-.slider-sale .fa-chevron-left, .certificate .fa-chevron-left {
+.slider-sale .fa-chevron-left, .slider-questions-answers .fa-chevron-left {
   left: 10px;
 }
-.slider-sale__item, .certificate__item {
+.slider-sale__item, .slider-questions-answers__item {
   padding: 0 50px;
 }
 
+.slider-questions-answers {
+  margin-bottom: 0;
+}
+
 /* 5.2 mattreses.html */
-#mattreses .content {
+#mattreses .content, #pillows .content {
   padding: 20px 0;
+}
+#mattreses .slider-block, #pillows .slider-block {
+  background: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .sidebar {
@@ -849,6 +875,24 @@ label {
   margin: 0 3px;
 }
 
+/* 5.3 contacts.html */
+.contacts, .contacts-questions {
+  margin-bottom: 50px;
+}
+.contacts address, .contacts-questions address {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts address a, .contacts-questions address a {
+  text-decoration: underline;
+}
+.contacts address a:hover, .contacts-questions address a:hover {
+  text-decoration: none;
+}
+
+/* 5.4 card.html */
 /* 6. FOOTER */
 /* ================================================ */
 #footer {
