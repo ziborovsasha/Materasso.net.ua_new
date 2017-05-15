@@ -126,6 +126,7 @@ h6 {
 
 p {
   margin: 0 0 10px;
+  line-height: 18px;
 }
 
 * {
@@ -380,11 +381,6 @@ input[type='url'],
 input[type='password'],
 textarea,
 select {
-  height: 40px;
-  margin-bottom: 15px;
-  padding: 0 10px;
-  color: #444;
-  font: normal 14px/18px Arial, sans-serif;
   border: 1px solid #ccc;
   background: #fff;
 }
@@ -632,9 +628,9 @@ label {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .news__img:hover {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
@@ -720,7 +716,7 @@ label {
   width: 33.33%;
   margin-right: -4px;
   padding: 15px 15px 15px;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 .product-card:hover {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
@@ -743,7 +739,7 @@ label {
   width: 350px;
   height: 210px;
   overflow: hidden;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -766,11 +762,16 @@ label {
 .product-card__title {
   color: #003d6c;
 }
-.product-card li {
-  line-height: 18px;
+.product-card dt {
+  width: 50%;
+  float: left;
+  margin-bottom: 5px;
 }
-.product-card span {
+.product-card dd {
   font-weight: 400;
+  width: 50%;
+  float: right;
+  margin-bottom: 5px;
 }
 
 /* section sale-certificate */
@@ -837,7 +838,7 @@ label {
   width: 18%;
   margin-right: 20px;
   padding: 15px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -893,6 +894,141 @@ label {
 }
 
 /* 5.4 card.html */
+.card {
+  margin-bottom: 30px;
+}
+.card h4 {
+  color: #d0215c;
+  text-transform: uppercase;
+}
+.card-left {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+.card-slider {
+  margin-bottom: 80px;
+  text-align: center;
+  border: 1px solid #e9ecf1;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.card-slider img {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.card-slider-nav {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  bottom: 10px;
+}
+.card-slider-nav__item {
+  height: 100%;
+  margin-right: 10px;
+  border: 1px solid #e9ecf1;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 0;
+  cursor: pointer;
+}
+.card-slider-nav__item:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+.card-slider-nav__item.slick-current, .card-slider-nav__item:hover {
+  border: 1px solid #d0215c;
+}
+.card-slider-nav__item img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.card dt {
+  width: 50%;
+  float: left;
+  margin-bottom: 5px;
+}
+.card dd {
+  font-weight: 400;
+  width: 50%;
+  float: right;
+  margin-bottom: 5px;
+}
+.card-right {
+  float: right;
+  width: 45%;
+}
+.card-right select {
+  width: 50%;
+  text-align: center;
+}
+.card-tab {
+  display: inline-block;
+}
+.card-tab .nav-tab li {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #fff;
+  border: 1px solid #e9ecf1;
+}
+.card-tab .nav-tab .active a {
+  color: #d0215c;
+}
+.card-tab .nav-tab .active {
+  border-bottom: none;
+}
+.card-tab .nav-tab a {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #363636;
+}
+.card-tab .nav-tab a:hover {
+  text-decoration: none;
+  color: #d0215c;
+}
+.card-tab .tab-cnt {
+  padding: 20px;
+  opacity: 1;
+  -moz-transition: opacity 1.4s;
+  -o-transition: opacity 1.4s;
+  -webkit-transition: opacity 1.4s;
+  -ms-transition: opacity 1.4s;
+  transition: opacity 1.4s;
+}
+.card-tab .tab-cnt.hide {
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  filter: alpha(opactiy=0);
+}
+.card-tab .hide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  z-index: -1;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  filter: alpha(opactiy=0);
+}
+
 /* 6. FOOTER */
 /* ================================================ */
 #footer {
