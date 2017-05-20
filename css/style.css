@@ -152,7 +152,6 @@ p {
 }
 
 /* main rules */
-html,body{height: 100%;}
 body {
   min-width: 320px;
   font: 14px/1 "OpenSans", sans-serif;
@@ -163,9 +162,11 @@ body {
   box-sizing: border-box;
   color: #363636;
 }
-#container{min-height: 100%;}
-#content{padding-bottom: 140px;}
-#footer{margin-top: -140px;}
+
+html, body {
+  height: 100%;
+}
+
 /* ==========================
  *     SLICK SLIDER
  * ======================== */
@@ -281,6 +282,18 @@ body {
 
 /* 3. MAIN STYLES */
 /* ================================================ */
+#container {
+  min-height: 100%;
+}
+
+#content {
+  padding-bottom: 140px;
+}
+
+#footer {
+  margin-top: -140px;
+}
+
 .wrapper {
   position: relative;
   max-width: 1154px;
@@ -834,7 +847,7 @@ label {
 
 /* 5.2 parthner.html */
 #partner {
-  margin: 50px auto;
+  margin: 10% auto;
   width: 40%;
 }
 #partner fieldset {
@@ -1002,17 +1015,30 @@ label {
   width: 45%;
 }
 .card-right select {
-  width: 50%;
+  width: 70%;
+  margin-bottom: 20px;
   text-align: center;
+}
+.card-price {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #d0215c;
 }
 .card-tab {
   display: inline-block;
+  border: 1px solid #e9ecf1;
 }
 .card-tab .nav-tab li {
   display: inline-block;
   padding: 12px 20px;
   background: #fff;
-  border: 1px solid #e9ecf1;
+  border-bottom: 1px solid #e9ecf1;
+  border-right: 1px solid #e9ecf1;
+  border-left: 1px solid #e9ecf1;
+}
+.card-tab .nav-tab li:first-child {
+  border-left: none;
 }
 .card-tab .nav-tab .active a {
   color: #d0215c;
@@ -1068,10 +1094,6 @@ label {
 /* 6. FOOTER */
 /* ================================================ */
 #footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: #003d6c;
   line-height: 20px;
   color: #fff;
