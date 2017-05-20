@@ -106,6 +106,8 @@ h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 36px;
+  color: #d0215c;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -152,6 +154,7 @@ p {
 /* main rules */
 body {
   min-width: 320px;
+  height: 100%;
   font: 14px/1 "OpenSans", sans-serif;
   font-weight: 300;
   background-color: #fff;
@@ -381,7 +384,7 @@ input[type='url'],
 input[type='password'],
 textarea,
 select {
-  border: 1px solid #ccc;
+  border: 1px solid #f7f7f7;
   background: #fff;
 }
 input[type='text'].form-control,
@@ -463,8 +466,8 @@ textarea {
 label {
   display: block;
   font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 /* 4. HEADER */
@@ -736,7 +739,7 @@ label {
   position: relative;
   display: block;
   margin-bottom: 30px;
-  width: 350px;
+  width: 100%;
   height: 210px;
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -772,6 +775,7 @@ label {
   width: 50%;
   float: right;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 /* section sale-certificate */
@@ -814,12 +818,33 @@ label {
 .slider-sale .fa-chevron-left, .slider-questions-answers .fa-chevron-left {
   left: 10px;
 }
-.slider-sale__item, .slider-questions-answers__item {
-  padding: 0 50px;
+.slider-sale__item img, .slider-questions-answers__item img {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .slider-questions-answers {
   margin-bottom: 0;
+}
+
+/* 5.2 parthner.html */
+#partner {
+  margin: 50px auto;
+  width: 40%;
+}
+#partner fieldset {
+  margin-bottom: 30px;
+}
+#partner input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+#partner input[type="submit"] {
+  width: 25%;
 }
 
 /* 5.2 mattreses.html */
@@ -879,6 +904,9 @@ label {
 /* 5.3 contacts.html */
 .contacts, .contacts-questions {
   margin-bottom: 50px;
+}
+.contacts h2, .contacts-questions h2 {
+  font-size: 30px;
 }
 .contacts address, .contacts-questions address {
   margin-bottom: 20px;
@@ -1015,6 +1043,12 @@ label {
   opacity: 0;
   filter: alpha(opactiy=0);
 }
+.card-tab .tab-cnt-descr {
+  margin-bottom: 30px;
+}
+.card-tab .tab-cnt-descr h5 {
+  margin-bottom: 10px;
+}
 .card-tab .hide {
   position: absolute;
   left: 0;
@@ -1032,6 +1066,10 @@ label {
 /* 6. FOOTER */
 /* ================================================ */
 #footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #003d6c;
   line-height: 20px;
   color: #fff;
