@@ -152,9 +152,9 @@ p {
 }
 
 /* main rules */
+html,body{height: 100%;}
 body {
   min-width: 320px;
-  height: 100%;
   font: 14px/1 "OpenSans", sans-serif;
   font-weight: 300;
   background-color: #fff;
@@ -163,7 +163,9 @@ body {
   box-sizing: border-box;
   color: #363636;
 }
-
+#container{min-height: 100%;}
+#content{padding-bottom: 140px;}
+#footer{margin-top: -140px;}
 /* ==========================
  *     SLICK SLIDER
  * ======================== */
