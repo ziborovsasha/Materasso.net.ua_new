@@ -738,7 +738,7 @@ label {
   display: inline-block;
   width: 33.33%;
   margin-right: -4px;
-  padding: 15px 15px 15px;
+  padding: 15px;
   margin-bottom: 20px;
 }
 .product-card:hover {
@@ -786,13 +786,13 @@ label {
   color: #003d6c;
 }
 .product-card dt {
-  width: 50%;
+  width: 70%;
   float: left;
   margin-bottom: 5px;
 }
 .product-card dd {
   font-weight: 400;
-  width: 50%;
+  width: 30%;
   float: right;
   margin-bottom: 5px;
   text-align: center;
@@ -1115,13 +1115,13 @@ label {
   vertical-align: middle;
   margin-right: -4px;
   margin-bottom: 0;
-  width: 50%;
+  width: 70%;
 }
 #footer address {
   display: inline-block;
   vertical-align: middle;
   margin-right: -4px;
-  width: 50%;
+  width: 30%;
   font-style: normal;
   text-align: right;
 }
@@ -1147,7 +1147,7 @@ label {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .head {
     padding: 20px 0 30px;
   }
@@ -1164,5 +1164,226 @@ label {
   }
   .primary-women {
     width: 500px;
+    top: -100px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .logo {
+    width: 180px;
+  }
+  .logo img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 6px;
+  }
+  .logo span {
+    font-size: 15px;
+  }
+
+  .phone ul {
+    margin-bottom: 8px;
+  }
+  .phone ul a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .btn, a.btn {
+    padding: 6px 18px;
+    font-size: 12px;
+  }
+
+  .nav-list__item {
+    padding: 0 10px 15px;
+  }
+
+  .primary {
+    padding: 40px 0 30px;
+  }
+  .primary h2 {
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  .primary-women {
+    width: 350px;
+    top: -80px;
+  }
+
+  .block-news, .about, .product, .slider-block {
+    padding: 30px 0;
+  }
+
+  .news {
+    padding: 0 10px;
+  }
+  .news-list {
+    margin: 0 -10px;
+  }
+  .news__img {
+    margin-bottom: 15px;
+  }
+  .news__text {
+    padding-bottom: 15px;
+  }
+  .news__text p {
+    margin-bottom: 15px;
+  }
+  .news h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .about-img {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .about .right {
+    margin-left: 20px;
+  }
+  .about h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .about-text {
+    margin-bottom: 20px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .product h3 {
+    margin-bottom: 15px;
+  }
+  .product-card {
+    padding: 10px;
+  }
+  .product-card__img {
+    margin-bottom: 15px;
+  }
+  .product-card h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .head {
+    padding: 15px 0 15px;
+  }
+
+  .nav-list a {
+    font-size: 18px;
+  }
+  .nav-list__item {
+    padding: 0 10px 10px;
+  }
+
+  .dropdown {
+    min-width: 160px;
+  }
+  .dropdown a {
+    padding: 5px;
+  }
+
+  .primary, .block-news, .about, .product, .slider-block {
+    padding: 20px 0;
+  }
+
+  .primary-women {
+    display: none;
+  }
+  .primary h2 {
+    width: 535px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .primary .title-lg {
+    font-size: 50px;
+  }
+
+  .news h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .head {
+    padding: 15px 0 5px 0;
+  }
+
+  .logo {
+    width: 162px;
+  }
+  .logo img {
+    margin-bottom: 4px;
+  }
+  .logo span {
+    font-size: 14px;
+  }
+
+  .phone ul {
+    margin-bottom: 5px;
+  }
+  .phone ul i {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+
+  .nav-list {
+    margin: 0 -10px;
+  }
+  .nav-list__item {
+    padding: 0 7px 8px;
+  }
+  .nav-list__item a {
+    font-size: 16px;
+  }
+  .nav-list__item a i {
+    margin-left: 3px;
+    font-size: 16px;
+  }
+
+  .block-news {
+    padding: 20px 0 0;
+  }
+
+  .news {
+    position: relative;
+    width: 50%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .news-list {
+    margin: 0 -20px;
+  }
+  .news__img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  .news h3 {
+    font-size: 18px;
+  }
+  .news__text p {
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .about {
+    padding: 20px 0 0;
+  }
+  .about-img {
+    width: 45%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .about .right {
+    margin-left: 10px;
+  }
+
+  .product h3 {
+    margin-bottom: 10px;
+  }
+  .product-card {
+    margin-bottom: 10px;
+  }
+  .product-card dl, .product-card dt {
+    font-size: 12px;
   }
 }
