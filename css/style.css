@@ -1125,7 +1125,7 @@ label {
   font-style: normal;
   text-align: right;
 }
-
+.btn-nav{display: none;}
 /* 7. MEDIA */
 /* ================================================ */
 @media screen and (max-width: 1320px) {
@@ -1451,6 +1451,7 @@ label {
     width: 36px;
     height: 36px;
     padding: 5px;
+		display: block;
     background-color: transparent;
     border: 2px solid #003867;
     -webkit-border-radius: 5px;
@@ -1463,7 +1464,7 @@ label {
     margin: 3px 0;
     background-color: #003867;
   }
-  .btn-nav.actives + .nav-list {
+  .nav-list.actives {
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
