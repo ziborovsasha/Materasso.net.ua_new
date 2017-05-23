@@ -1340,6 +1340,10 @@ label {
     font-size: 16px;
   }
 
+  .dropdown {
+    min-width: 110px;
+  }
+
   .block-news {
     padding: 20px 0 0;
   }
@@ -1361,7 +1365,7 @@ label {
     font-size: 18px;
   }
   .news__text p {
-    height: 100px;
+    height: 70px;
     font-size: 14px;
   }
 
@@ -1385,5 +1389,116 @@ label {
   }
   .product-card dl, .product-card dt {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .news__text p {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .news__text p {
+    height: 110px;
+  }
+
+  .product-card {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .primary h2 {
+    width: 470px;
+    font-size: 28px;
+  }
+  .primary .title-lg {
+    font-size: 44px;
+  }
+
+  .news__text p {
+    height: 125px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .head {
+    padding: 10px 0 5px 0;
+  }
+
+  .logo {
+    width: 140px;
+  }
+  .logo a {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .logo span {
+    font-size: 12px;
+  }
+
+  .phone ul a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #nav {
+    position: relative;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .btn-nav {
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid #003867;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .btn-nav span {
+    display: block;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #003867;
+  }
+  .btn-nav.actives + .nav-list {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .nav-list {
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(136, 139, 144, 0.38);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .nav-list__item {
+    display: block;
+    margin-right: 0;
+    padding: 5px;
+  }
+  .nav-list__item i {
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  .dropdown {
+    left: 100%;
+    top: 0;
   }
 }
