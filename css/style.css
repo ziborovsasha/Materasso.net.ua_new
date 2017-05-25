@@ -1150,6 +1150,10 @@ label {
     display: block;
     max-width: 100%;
   }
+
+  .sidebar {
+    padding: 5px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .head {
@@ -1452,7 +1456,7 @@ label {
   }
 
   .nav-list {
-    display: none;
+    display: none !important;
   }
 
   .btn-nav {
