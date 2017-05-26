@@ -1023,9 +1023,10 @@ label {
   float: right;
   width: 45%;
 }
-.card-right select {
+.card-right .card-select {
   width: 70%;
   margin-bottom: 20px;
+  padding: 5px;
   text-align: center;
 }
 .card-price {
@@ -1288,6 +1289,20 @@ label {
   .product-card h3 {
     font-size: 20px;
   }
+
+  .sidebar h4, .sidebar a {
+    font-size: 16px;
+  }
+
+  .product h3 {
+    margin-bottom: 10px;
+  }
+  .product-card {
+    margin-bottom: 10px;
+  }
+  .product-card dl, .product-card dt {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 800px) {
   .head {
@@ -1326,6 +1341,14 @@ label {
 
   .news h3 {
     font-size: 17px;
+  }
+
+  #partner {
+    width: 80%;
+  }
+
+  #mattreses .product-card {
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1411,19 +1434,17 @@ label {
     margin-left: 10px;
   }
 
-  .product h3 {
-    margin-bottom: 10px;
-  }
-  .product-card {
-    margin-bottom: 10px;
-  }
-  .product-card dl, .product-card dt {
-    font-size: 12px;
+  .sidebar {
+    width: 20%;
   }
 }
 @media screen and (max-width: 650px) {
   .news__text p {
     height: 80px;
+  }
+
+  .sidebar {
+    width: 25%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1433,6 +1454,14 @@ label {
 
   .product-card {
     width: 50%;
+  }
+
+  .sidebar {
+    width: 19%;
+    margin-right: 10px;
+  }
+  .sidebar h4, .sidebar a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -1450,6 +1479,10 @@ label {
 
   .copyright, .social, address {
     font-size: 13px;
+  }
+
+  .sidebar {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1637,20 +1670,20 @@ label {
     line-height: 16px;
   }
 
-  .product {
+  #main .product, #mattreses .product {
     padding: 10px 0;
   }
-  .product-card {
+  #main .product-card, #mattreses .product-card {
     width: 100%;
     padding: 10px;
   }
-  .product-card__img, .product-card h3 {
+  #main .product-card__img, #main .product-card h3, #mattreses .product-card__img, #mattreses .product-card h3 {
     margin-bottom: 5px;
   }
-  .product-card dl, .product-card dt {
+  #main .product-card dl, #main .product-card dt, #mattreses .product-card dl, #mattreses .product-card dt {
     font-size: 14px;
   }
-  .product-list {
+  #main .product-list, #mattreses .product-list {
     margin: 0;
   }
 }
