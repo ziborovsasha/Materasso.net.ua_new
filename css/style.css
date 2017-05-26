@@ -1119,13 +1119,30 @@ label {
   vertical-align: middle;
   margin-right: -4px;
   margin-bottom: 0;
-  width: 70%;
+  width: 50%;
+}
+#footer .social {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#footer .social li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 30px;
+}
+#footer .social li a {
+  color: #fff;
+}
+#footer .social li a:hover {
+  color: #d0215c;
 }
 #footer address {
   display: inline-block;
   vertical-align: middle;
   margin-right: -4px;
-  width: 30%;
+  width: 25%;
   font-style: normal;
   text-align: right;
 }
@@ -1430,6 +1447,10 @@ label {
   .news__text p {
     height: 100px;
   }
+
+  .copyright, .social, address {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .wrapper {
@@ -1565,13 +1586,20 @@ label {
   #footer .wrapper {
     padding: 10px;
   }
-  #footer .copyright, #footer address {
-    width: 60%;
-    font-size: 13px;
-    line-height: 15px;
+  #footer .copyright {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #footer .social {
+    width: 50%;
+    font-size: 14px;
   }
   #footer address {
-    width: 40%;
+    width: 50%;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 380px) {
