@@ -75,7 +75,10 @@ input, textarea, select {
   -webkit-border-radius: 0;
   -webkit-appearance: none;
 }
-
+:focus::-webkit-input-placeholder {color: transparent !important;}
+:focus::-moz-placeholder          {color: transparent !important;}
+:focus:-moz-placeholder           {color: transparent !important;}
+:focus:-ms-input-placeholder      {color: transparent !important;}
 textarea {
   resize: vertical;
 }
@@ -233,6 +236,7 @@ html, body {
   float: left;
   height: 100%;
   min-height: 1px;
+	outline: none;
 }
 
 [dir='rtl'] .slick-slide {
@@ -618,11 +622,12 @@ label {
   z-index: 1;
 }
 .primary h2 {
-  display: block;
   width: 590px;
   margin-bottom: 40px;
   line-height: 70px;
   color: #fff;
+	position: relative;
+	z-index: 2;
 }
 .primary .title-up {
   text-transform: uppercase;
@@ -764,7 +769,6 @@ label {
   display: block;
   margin-bottom: 30px;
   width: 100%;
-  height: 210px;
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 10px;
@@ -772,11 +776,9 @@ label {
   border-radius: 10px;
 }
 .product-card__img img {
-  position: absolute;
-  left: 0;
-  top: 0;
   display: block;
   width: 100%;
+	height: auto;
   margin: 0 auto;
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -785,6 +787,9 @@ label {
 }
 .product-card__img img.second {
   opacity: 0;
+	position: absolute;
+  left: 0;
+  top: 0;
 }
 .product-card__title {
   color: #003d6c;
@@ -884,7 +889,8 @@ label {
 
 .sidebar {
   float: left;
-  width: 18%;
+  width: 200px;
+	box-sizing: border-box;
   margin-right: 20px;
   padding: 15px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -1116,34 +1122,27 @@ label {
   padding-bottom: 20px;
 }
 #footer .copyright {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: -4px;
+  float: left;
   margin-bottom: 0;
-  width: 50%;
+  margin-right: 20px;
 }
 #footer .social {
-  display: inline-block;
-  width: 25%;
   text-align: center;
-  vertical-align: middle;
 }
 #footer .social li {
   display: inline-block;
   padding: 0 5px;
   font-size: 30px;
 }
-#footer .social li a {
+#footer .social a {
   color: #fff;
 }
-#footer .social li a:hover {
+#footer .social a:hover {
   color: #d0215c;
 }
 #footer address {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: -4px;
-  width: 25%;
+  float: right;
+	margin-left: 20px;
   font-style: normal;
   text-align: right;
 }
@@ -1414,7 +1413,6 @@ label {
     font-size: 18px;
   }
   .news__text p {
-    height: 60px;
     margin-bottom: 0;
     font-size: 14px;
   }
@@ -1433,35 +1431,27 @@ label {
   .about .right {
     margin-left: 10px;
   }
-
-  .sidebar {
-    width: 20%;
-  }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .news__text p {
-    height: 80px;
+    font-size: 14px;
+		display: -webkit-box;
+		height: 34px; /* Fallback for non-webkit */
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
   }
-
-  .sidebar {
-    width: 25%;
-  }
+	#footer address,
+	#footer .copyright{
+		float: none;
+		margin: 0 0 30px;
+		text-align: center;
+	}
 }
 @media screen and (max-width: 600px) {
-  .news__text p {
-    height: 95px;
-  }
-
   .product-card {
     width: 50%;
-  }
-
-  .sidebar {
-    width: 19%;
-    margin-right: 10px;
-  }
-  .sidebar h4, .sidebar a {
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -1471,10 +1461,6 @@ label {
   }
   .primary .title-lg {
     font-size: 44px;
-  }
-
-  .news__text p {
-    height: 100px;
   }
 
   .copyright, .social, address {
@@ -1592,13 +1578,6 @@ label {
   .news h3 {
     font-size: 16px;
   }
-  .news__text p {
-    overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    height: 25px;
-  }
 
   .about-img {
     float: none;
@@ -1619,7 +1598,7 @@ label {
   #footer .wrapper {
     padding: 10px;
   }
-  #footer .copyright {
+  /*#footer .copyright {
     display: block;
     width: 100%;
     margin-right: 0;
@@ -1633,7 +1612,7 @@ label {
   #footer address {
     width: 50%;
     font-size: 14px;
-  }
+  }*/
 }
 @media screen and (max-width: 380px) {
   .primary {
