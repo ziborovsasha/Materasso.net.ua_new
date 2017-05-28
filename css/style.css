@@ -74,10 +74,7 @@ input, textarea, select {
   -webkit-border-radius: 0;
   -webkit-appearance: none;
 }
-:focus::-webkit-input-placeholder {color: transparent !important;}
-:focus::-moz-placeholder          {color: transparent !important;}
-:focus:-moz-placeholder           {color: transparent !important;}
-:focus:-ms-input-placeholder      {color: transparent !important;}
+
 textarea {
   resize: vertical;
 }
@@ -235,7 +232,6 @@ html, body {
   float: left;
   height: 100%;
   min-height: 1px;
-	outline: none;
 }
 
 [dir='rtl'] .slick-slide {
@@ -578,19 +574,13 @@ label {
   z-index: 1;
 }
 .primary h2 {
-<<<<<<< HEAD
   display: block;
   width: 595px;
   position: relative;
   z-index: 5;
-=======
-  width: 590px;
->>>>>>> origin/master
   margin-bottom: 40px;
   line-height: 70px;
   color: #fff;
-	position: relative;
-	z-index: 2;
 }
 .primary .title-up {
   text-transform: uppercase;
@@ -743,7 +733,6 @@ label {
   display: block;
   height: auto;
   width: 100%;
-	height: auto;
   margin: 0 auto;
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -755,9 +744,6 @@ label {
   left: 0;
   top: 0;
   opacity: 0;
-	position: absolute;
-  left: 0;
-  top: 0;
 }
 .product-card__title {
   color: #003d6c;
@@ -857,8 +843,7 @@ label {
 
 .sidebar {
   float: left;
-  width: 200px;
-	box-sizing: border-box;
+  width: 18%;
   margin-right: 20px;
   padding: 15px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -1095,10 +1080,6 @@ label {
 }
 #footer .copyright {
   float: left;
-<<<<<<< HEAD
-=======
-  margin-bottom: 0;
->>>>>>> origin/master
   margin-right: 20px;
 }
 #footer .social {
@@ -1109,19 +1090,15 @@ label {
   padding: 0 5px;
   font-size: 30px;
 }
-#footer .social a {
+#footer .social li a {
   color: #fff;
 }
-#footer .social a:hover {
+#footer .social li a:hover {
   color: #d0215c;
 }
 #footer address {
   float: right;
-<<<<<<< HEAD
   margin-left: 20px;
-=======
-	margin-left: 20px;
->>>>>>> origin/master
   font-style: normal;
   text-align: right;
 }
@@ -1420,38 +1397,6 @@ label {
     min-width: 110px;
   }
 
-<<<<<<< HEAD
-=======
-  .block-news {
-    padding: 20px 0 0;
-  }
-
-  .news {
-    position: relative;
-    width: 50%;
-    padding: 0 20px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .news-list {
-    margin: 0 -20px;
-  }
-  .news__img {
-    width: 150px;
-    margin: 0 auto 10px;
-  }
-  .news h3 {
-    font-size: 18px;
-  }
-  .news__text p {
-    margin-bottom: 0;
-    font-size: 14px;
-  }
-  .news .btn {
-    position: static;
-  }
-
->>>>>>> origin/master
   .about {
     padding: 20px 0 0;
   }
@@ -1463,7 +1408,6 @@ label {
   .about .right {
     margin-left: 10px;
   }
-<<<<<<< HEAD
 
   .cnt h2 {
     font-size: 20px;
@@ -1533,30 +1477,6 @@ label {
   .sidebar h4, .sidebar a {
     font-size: 14px;
   }
-=======
-}
-@media screen and (max-width: 700px) {
-  .news__text p {
-    font-size: 14px;
-		display: -webkit-box;
-		height: 34px; /* Fallback for non-webkit */
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-		text-overflow: ellipsis;
-  }
-	#footer address,
-	#footer .copyright{
-		float: none;
-		margin: 0 0 30px;
-		text-align: center;
-	}
-}
-@media screen and (max-width: 600px) {
-  .product-card {
-    width: 50%;
-  }
->>>>>>> origin/master
 }
 @media screen and (max-width: 540px) {
   .primary h2 {
@@ -1567,13 +1487,6 @@ label {
     font-size: 44px;
   }
 
-<<<<<<< HEAD
-=======
-  .copyright, .social, address {
-    font-size: 13px;
-  }
-
->>>>>>> origin/master
   .sidebar {
     display: none;
   }
@@ -1717,13 +1630,8 @@ label {
   .card {
     margin-bottom: 10px;
   }
-<<<<<<< HEAD
   .card-left {
     float: none;
-=======
-  /*#footer .copyright {
-    display: block;
->>>>>>> origin/master
     width: 100%;
   }
   .card-slider {
@@ -1743,7 +1651,6 @@ label {
   .card-right .card-select {
     float: left;
     width: 50%;
-<<<<<<< HEAD
     padding: 3px 10px;
   }
   .card-right .card-price {
@@ -1757,10 +1664,6 @@ label {
   #footer {
     margin-top: -95px;
   }
-=======
-    font-size: 14px;
-  }*/
->>>>>>> origin/master
 }
 @media screen and (max-width: 380px) {
   .primary {
