@@ -571,7 +571,7 @@ label {
 .primary {
   position: relative;
   padding: 80px 0;
-  background: url(../img/bg-primary-new.jpg) no-repeat;
+  background: url(../img/bg-primary.jpg) no-repeat;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -669,12 +669,6 @@ label {
   padding: 40px 0 0;
   margin-bottom: 40px;
   background-color: #f7f7f8;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
@@ -902,7 +896,7 @@ label {
 .cnt {
   height: 1%;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 5px 20px;
   margin-bottom: 40px;
 }
 .cnt h1 {
@@ -915,6 +909,30 @@ label {
 }
 
 /* 5.3 contacts.html */
+.contacts {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts address {
+  margin-bottom: 20px;
+}
+.contacts-questions address {
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts-questions a {
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts-questions a:hover {
+  color: #d0215c;
+}
+
+address {
+  font-style: normal;
+}
+
 /* 5.4 mattreses-card.html */
 .card {
   margin-bottom: 30px;
@@ -943,7 +961,7 @@ label {
   position: absolute;
   width: 200px;
   left: 0;
-  bottom: 10px;
+  bottom: 0;
 }
 .card-slider-nav__item {
   height: 100%;
@@ -979,11 +997,14 @@ label {
   width: 47%;
 }
 .card-right h5 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 20px;
 }
 .card-right .card-select {
   width: 100% !important;
+}
+.card-right .descr-block {
+  margin-bottom: 40px;
 }
 .card-price {
   display: inline-block;
@@ -1055,6 +1076,46 @@ label {
 .select2-container:active, .select2-container:hover, .select2-container:focus {
   outline: 0 !important;
   outline-offset: 0 !important;
+}
+
+/* 5.5 materials.html */
+.materials {
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.materials-block {
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #e9ecf1;
+}
+.materials-block:last-child {
+  border-bottom: none;
+}
+.materials-block span {
+  text-transform: uppercase;
+}
+.materials-block__img {
+  float: left;
+  width: 30.33%;
+  margin-right: 20px;
+}
+.materials-block__img img {
+  display: block;
+  width: 100%;
+}
+.materials-block__text {
+  height: 1%;
+  overflow: hidden;
+}
+.materials-block__text p {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* 6. FOOTER */
@@ -1417,10 +1478,18 @@ label {
 
   .card-left {
     float: none;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .card-left .card-slider {
     margin-bottom: 20px;
+  }
+  .card-left .card-slider-nav {
+    left: 50%;
+  }
+  .card-left .card-slider-nav__item {
+    margin-right: 0;
+    margin-left: 10px;
   }
   .card-right {
     width: 100%;
@@ -1490,10 +1559,12 @@ label {
     margin-bottom: 20px;
   }
 
+  .card-left .card-slider-nav {
+    width: 50%;
+  }
   .card-price {
     font-size: 30px;
   }
-
   .card-tabs .tabs {
     width: 65px;
   }
